@@ -115,5 +115,5 @@ def main():
     print("J'aurais {} souris au bout de {} semaines.".format(nb_souris, temps//7))
     print("--------------------------------------------")
 
-
-main()  
+if __name__=='__main__':
+    main()  

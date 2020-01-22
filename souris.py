@@ -107,11 +107,10 @@ class Elevage:
 
 def main():
 
-  nombre_initial_souris = 2
+  elevage = Elevage(2) # 2 étant le nombre initial de souris que je possède
 
   for i in range(1, 52):
     temps = 7 * i
-    elevage = Elevage(nombre_initial_souris) # 2 étant le nombre initial de souris que je possède
     nb_souris = elevage.nb_souris_pour_nb_jours(temps)
     print("J'aurais {} souris au bout de {} semaines.".format(nb_souris, temps//7))
     print("--------------------------------------------")

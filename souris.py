@@ -47,7 +47,8 @@ class Souris:
   @property
   def can_give_birth(self):
     # peut donner naissance si c'est une femelle, si l'age est supérieur à (AGE_MINIMUM_REPRODUCTION + durée de gestation) et si elle n'est pas gestante.
-    return (self.sexe == 'femelle' and self.age >= (self.AGE_MINIMUM_REPRODUCTION + self.DUREE) and (self.age - self.AGE_MINIMUM_REPRODUCTION + self.DUREE) % self.DUREE == 0)
+    return (self.sexe == 'femelle' and self.age >= (self.AGE_MINIMUM_REPRODUCTION + self.DUREE) 
+            and (self.age - self.AGE_MINIMUM_REPRODUCTION + self.DUREE) % self.DUREE == 0)
 
 
 
